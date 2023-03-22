@@ -1,0 +1,21 @@
+(lang dune 3.7)
+
+(name jsoo_digestif_510)
+(license MIT)
+(generate_opam_files true)
+(executables_implicit_empty_intf true)
+(explicit_js_mode)
+(maintainers "xvw")
+
+(package
+(name jsoo_digestif_510)
+(synopsis "A simple usage of tezso-base58 in js_of_ocaml 5.1.0")
+(allow_empty)
+(depends
+ (ocaml (>= 5.0.0))
+ merlin
+ (dune (>= 3.0.0))
+ (js_of_ocaml-compiler (and (>= 5.0.0) (< 5.1.0)))
+ (js_of_ocaml-ppx (and (>= 5.0.0) (< 5.1.0)))
+ (zarith_stubs_js (>= 0.15.0))
+ (tezos-base58 (>= 1.0.0))))

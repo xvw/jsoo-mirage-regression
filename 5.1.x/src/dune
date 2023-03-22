@@ -1,0 +1,7 @@
+(executable
+ (name main)
+ (js_of_ocaml (flags :standard))
+ (modes js)
+ (promote (until-clean))
+ (libraries zarith_stubs_js digestif.ocaml tezos-base58)
+ (preprocess (pps js_of_ocaml-ppx)))
